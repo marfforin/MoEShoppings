@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BFC04FC1C9690EF007B0CFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC04FB1C9690EF007B0CFE /* main.m */; };
+		5BFC04FF1C9690EF007B0CFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC04FE1C9690EF007B0CFE /* AppDelegate.m */; };
+		5BFC05051C9690EF007B0CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC05031C9690EF007B0CFE /* Main.storyboard */; };
+		5BFC05071C9690EF007B0CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC05061C9690EF007B0CFE /* Assets.xcassets */; };
+		5BFC050A1C9690EF007B0CFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC05081C9690EF007B0CFE /* LaunchScreen.storyboard */; };
+		5BFC052A1C969572007B0CFE /* MoEShoppingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC05291C969572007B0CFE /* MoEShoppingsTableViewController.m */; };
+		5BFC052D1C9695A0007B0CFE /* HotCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC052C1C9695A0007B0CFE /* HotCollectionViewController.m */; };
+		5BFC05301C9695ED007B0CFE /* ClassifyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC052F1C9695ED007B0CFE /* ClassifyTableViewController.m */; };
+		5BFC05331C9695FB007B0CFE /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC05321C9695FB007B0CFE /* MyViewController.m */; };
+		5BFC05361C96981C007B0CFE /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC05351C96981C007B0CFE /* MainTabBarController.m */; };
+		C21A80D51C98EF8E00512E8D /* HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80D41C98EF8E00512E8D /* HeaderTableViewCell.m */; };
+		C21A80D81C98F86900512E8D /* SegmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80D71C98F86900512E8D /* SegmentTableViewCell.m */; };
+		C21A80DB1C98FEBD00512E8D /* MyComTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80DA1C98FEBD00512E8D /* MyComTableViewController.m */; };
+		C21A80DE1C98FEDD00512E8D /* MySpeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80DD1C98FEDD00512E8D /* MySpeTableViewController.m */; };
+		C21A80E41C992EE600512E8D /* MyFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80E31C992EE600512E8D /* MyFirstTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5BFC04F71C9690EF007B0CFE /* MoEShoppings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoEShoppings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BFC04FB1C9690EF007B0CFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BFC04FD1C9690EF007B0CFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		5BFC04FE1C9690EF007B0CFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		5BFC05041C9690EF007B0CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BFC05061C9690EF007B0CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BFC05091C9690EF007B0CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BFC050B1C9690EF007B0CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BFC05281C969572007B0CFE /* MoEShoppingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoEShoppingsTableViewController.h; sourceTree = "<group>"; };
+		5BFC05291C969572007B0CFE /* MoEShoppingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoEShoppingsTableViewController.m; sourceTree = "<group>"; };
+		5BFC052B1C9695A0007B0CFE /* HotCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotCollectionViewController.h; sourceTree = "<group>"; };
+		5BFC052C1C9695A0007B0CFE /* HotCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotCollectionViewController.m; sourceTree = "<group>"; };
+		5BFC052E1C9695ED007B0CFE /* ClassifyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyTableViewController.h; sourceTree = "<group>"; };
+		5BFC052F1C9695ED007B0CFE /* ClassifyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyTableViewController.m; sourceTree = "<group>"; };
+		5BFC05311C9695FB007B0CFE /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		5BFC05321C9695FB007B0CFE /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		5BFC05341C96981C007B0CFE /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		5BFC05351C96981C007B0CFE /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		C21A80D31C98EF8E00512E8D /* HeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderTableViewCell.h; sourceTree = "<group>"; };
+		C21A80D41C98EF8E00512E8D /* HeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderTableViewCell.m; sourceTree = "<group>"; };
+		C21A80D61C98F86900512E8D /* SegmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentTableViewCell.h; sourceTree = "<group>"; };
+		C21A80D71C98F86900512E8D /* SegmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentTableViewCell.m; sourceTree = "<group>"; };
+		C21A80D91C98FEBD00512E8D /* MyComTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyComTableViewController.h; sourceTree = "<group>"; };
+		C21A80DA1C98FEBD00512E8D /* MyComTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComTableViewController.m; sourceTree = "<group>"; };
+		C21A80DC1C98FEDD00512E8D /* MySpeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySpeTableViewController.h; sourceTree = "<group>"; };
+		C21A80DD1C98FEDD00512E8D /* MySpeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpeTableViewController.m; sourceTree = "<group>"; };
+		C21A80E21C992EE600512E8D /* MyFirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFirstTableViewCell.h; sourceTree = "<group>"; };
+		C21A80E31C992EE600512E8D /* MyFirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFirstTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BFC04F41C9690EF007B0CFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BFC04EE1C9690EF007B0CFE = {
+			isa = PBXGroup;
+			children = (
+				5BFC04F91C9690EF007B0CFE /* MoEShoppings */,
+				5BFC04F81C9690EF007B0CFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BFC04F81C9690EF007B0CFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC04F71C9690EF007B0CFE /* MoEShoppings.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BFC04F91C9690EF007B0CFE /* MoEShoppings */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC051E1C969480007B0CFE /* Main */,
+				5BFC051F1C969480007B0CFE /* MoEShoppings */,
+				5BFC05191C969480007B0CFE /* Hot */,
+				5BFC05151C969480007B0CFE /* Classify */,
+				5BFC05231C969480007B0CFE /* My */,
+				5BFC05141C969480007B0CFE /* Category */,
+				5BFC051D1C969480007B0CFE /* Lib */,
+				5BFC05271C969480007B0CFE /* Others */,
+				5BFC05061C9690EF007B0CFE /* Assets.xcassets */,
+				5BFC05081C9690EF007B0CFE /* LaunchScreen.storyboard */,
+				5BFC050B1C9690EF007B0CFE /* Info.plist */,
+				5BFC04FA1C9690EF007B0CFE /* Supporting Files */,
+			);
+			path = MoEShoppings;
+			sourceTree = "<group>";
+		};
+		5BFC04FA1C9690EF007B0CFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC04FB1C9690EF007B0CFE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BFC05141C969480007B0CFE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5BFC05151C969480007B0CFE /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC05161C969480007B0CFE /* Controller */,
+				5BFC05171C969480007B0CFE /* Model */,
+				5BFC05181C969480007B0CFE /* View */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		5BFC05161C969480007B0CFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC052E1C9695ED007B0CFE /* ClassifyTableViewController.h */,
+				5BFC052F1C9695ED007B0CFE /* ClassifyTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BFC05171C969480007B0CFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BFC05181C969480007B0CFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BFC05191C969480007B0CFE /* Hot */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC051A1C969480007B0CFE /* Controller */,
+				5BFC051B1C969480007B0CFE /* Model */,
+				5BFC051C1C969480007B0CFE /* View */,
+			);
+			path = Hot;
+			sourceTree = "<group>";
+		};
+		5BFC051A1C969480007B0CFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC052B1C9695A0007B0CFE /* HotCollectionViewController.h */,
+				5BFC052C1C9695A0007B0CFE /* HotCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BFC051B1C969480007B0CFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BFC051C1C969480007B0CFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BFC051D1C969480007B0CFE /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		5BFC051E1C969480007B0CFE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC04FD1C9690EF007B0CFE /* AppDelegate.h */,
+				5BFC04FE1C9690EF007B0CFE /* AppDelegate.m */,
+				5BFC05341C96981C007B0CFE /* MainTabBarController.h */,
+				5BFC05201C969480007B0CFE /* Controller */,
+				5BFC05351C96981C007B0CFE /* MainTabBarController.m */,
+				5BFC05031C9690EF007B0CFE /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5BFC051F1C969480007B0CFE /* MoEShoppings */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC05211C969480007B0CFE /* Model */,
+				5BFC05221C969480007B0CFE /* View */,
+			);
+			path = MoEShoppings;
+			sourceTree = "<group>";
+		};
+		5BFC05201C969480007B0CFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC05281C969572007B0CFE /* MoEShoppingsTableViewController.h */,
+				5BFC05291C969572007B0CFE /* MoEShoppingsTableViewController.m */,
+			);
+			name = Controller;
+			path = ../MoEShoppings/Controller;
+			sourceTree = "<group>";
+		};
+		5BFC05211C969480007B0CFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BFC05221C969480007B0CFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BFC05231C969480007B0CFE /* My */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC05241C969480007B0CFE /* Controller */,
+				5BFC05251C969480007B0CFE /* Model */,
+				5BFC05261C969480007B0CFE /* View */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		5BFC05241C969480007B0CFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BFC05311C9695FB007B0CFE /* MyViewController.h */,
+				5BFC05321C9695FB007B0CFE /* MyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BFC05251C969480007B0CFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BFC05261C969480007B0CFE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C21A80E21C992EE600512E8D /* MyFirstTableViewCell.h */,
+				C21A80E31C992EE600512E8D /* MyFirstTableViewCell.m */,
+				C21A80D31C98EF8E00512E8D /* HeaderTableViewCell.h */,
+				C21A80D41C98EF8E00512E8D /* HeaderTableViewCell.m */,
+				C21A80D61C98F86900512E8D /* SegmentTableViewCell.h */,
+				C21A80D71C98F86900512E8D /* SegmentTableViewCell.m */,
+				C21A80D91C98FEBD00512E8D /* MyComTableViewController.h */,
+				C21A80DA1C98FEBD00512E8D /* MyComTableViewController.m */,
+				C21A80DC1C98FEDD00512E8D /* MySpeTableViewController.h */,
+				C21A80DD1C98FEDD00512E8D /* MySpeTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BFC05271C969480007B0CFE /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BFC04F61C9690EF007B0CFE /* MoEShoppings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BFC050E1C9690EF007B0CFE /* Build configuration list for PBXNativeTarget "MoEShoppings" */;
+			buildPhases = (
+				5BFC04F31C9690EF007B0CFE /* Sources */,
+				5BFC04F41C9690EF007B0CFE /* Frameworks */,
+				5BFC04F51C9690EF007B0CFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoEShoppings;
+			productName = MoEShoppings;
+			productReference = 5BFC04F71C9690EF007B0CFE /* MoEShoppings.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BFC04EF1C9690EF007B0CFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = dr.m;
+				TargetAttributes = {
+					5BFC04F61C9690EF007B0CFE = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 5BFC04F21C9690EF007B0CFE /* Build configuration list for PBXProject "MoEShoppings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BFC04EE1C9690EF007B0CFE;
+			productRefGroup = 5BFC04F81C9690EF007B0CFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BFC04F61C9690EF007B0CFE /* MoEShoppings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BFC04F51C9690EF007B0CFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BFC050A1C9690EF007B0CFE /* LaunchScreen.storyboard in Resources */,
+				5BFC05071C9690EF007B0CFE /* Assets.xcassets in Resources */,
+				5BFC05051C9690EF007B0CFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BFC04F31C9690EF007B0CFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BFC04FF1C9690EF007B0CFE /* AppDelegate.m in Sources */,
+				5BFC05361C96981C007B0CFE /* MainTabBarController.m in Sources */,
+				C21A80E41C992EE600512E8D /* MyFirstTableViewCell.m in Sources */,
+				5BFC05301C9695ED007B0CFE /* ClassifyTableViewController.m in Sources */,
+				C21A80DE1C98FEDD00512E8D /* MySpeTableViewController.m in Sources */,
+				C21A80DB1C98FEBD00512E8D /* MyComTableViewController.m in Sources */,
+				5BFC052D1C9695A0007B0CFE /* HotCollectionViewController.m in Sources */,
+				C21A80D51C98EF8E00512E8D /* HeaderTableViewCell.m in Sources */,
+				5BFC052A1C969572007B0CFE /* MoEShoppingsTableViewController.m in Sources */,
+				5BFC04FC1C9690EF007B0CFE /* main.m in Sources */,
+				5BFC05331C9695FB007B0CFE /* MyViewController.m in Sources */,
+				C21A80D81C98F86900512E8D /* SegmentTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BFC05031C9690EF007B0CFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BFC05041C9690EF007B0CFE /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5BFC05081C9690EF007B0CFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BFC05091C9690EF007B0CFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BFC050C1C9690EF007B0CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5BFC050D1C9690EF007B0CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BFC050F1C9690EF007B0CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MoEShoppings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dr.m.MoEShoppings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5BFC05101C9690EF007B0CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MoEShoppings/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dr.m.MoEShoppings;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BFC04F21C9690EF007B0CFE /* Build configuration list for PBXProject "MoEShoppings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BFC050C1C9690EF007B0CFE /* Debug */,
+				5BFC050D1C9690EF007B0CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BFC050E1C9690EF007B0CFE /* Build configuration list for PBXNativeTarget "MoEShoppings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BFC050F1C9690EF007B0CFE /* Debug */,
+				5BFC05101C9690EF007B0CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BFC04EF1C9690EF007B0CFE /* Project object */;
+}
