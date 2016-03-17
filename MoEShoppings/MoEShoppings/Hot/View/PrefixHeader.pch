@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  MoEShoppings
+//
+//  Created by lanou3g on 16/3/16.
+//  Copyright © 2016年 dr.m. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define kContentViewX self.contentView.bounds.origin.x
+#define kContentViewY self.contentView.bounds.origin.y
+#define kContentViewWidth self.contentView.bounds.size.width
+#define kContentViewHeight self.contentView.bounds.size.height
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
