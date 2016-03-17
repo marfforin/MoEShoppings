@@ -205,7 +205,6 @@
 				5BFC04FD1C9690EF007B0CFE /* AppDelegate.h */,
 				5BFC04FE1C9690EF007B0CFE /* AppDelegate.m */,
 				5BFC05341C96981C007B0CFE /* MainTabBarController.h */,
-				5BFC05201C969480007B0CFE /* Controller */,
 				5BFC05351C96981C007B0CFE /* MainTabBarController.m */,
 				5BFC05031C9690EF007B0CFE /* Main.storyboard */,
 			);
@@ -215,6 +214,7 @@
 		5BFC051F1C969480007B0CFE /* MoEShoppings */ = {
 			isa = PBXGroup;
 			children = (
+				5BFC05201C969480007B0CFE /* Controller */,
 				5BFC05211C969480007B0CFE /* Model */,
 				5BFC05221C969480007B0CFE /* View */,
 			);
@@ -227,8 +227,7 @@
 				5BFC05281C969572007B0CFE /* MoEShoppingsTableViewController.h */,
 				5BFC05291C969572007B0CFE /* MoEShoppingsTableViewController.m */,
 			);
-			name = Controller;
-			path = ../MoEShoppings/Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		5BFC05211C969480007B0CFE /* Model */ = {
