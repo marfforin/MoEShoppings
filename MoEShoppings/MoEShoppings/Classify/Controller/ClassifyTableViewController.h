@@ -10,4 +10,9 @@
 
 @interface ClassifyTableViewController : UITableViewController
 
+@property(nonatomic,strong) UIScrollView *scrollView;
+
+@property(nonatomic,strong) UIButton *button1;
+
+@property(nonatomic,strong) UILabel *label;
 @end

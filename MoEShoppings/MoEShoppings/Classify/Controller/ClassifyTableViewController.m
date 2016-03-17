@@ -7,16 +7,28 @@
 //
 
 #import "ClassifyTableViewController.h"
+#import "ClassifyTableViewCell.h"
+#import "Url.h"
 
+#import "SpecialModel.h"
+#import "SpecialRequset.h"
 @interface ClassifyTableViewController ()
+
+@property(nonatomic,strong) NSMutableArray *arr;
 
 @end
 
 @implementation ClassifyTableViewController
+-(NSMutableArray *)arr{
+    if(!_arr){
+        self.arr = [NSMutableArray array];
+    }
+    return _arr;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     
     UIImage *image = [UIImage imageNamed:@"ic_menu_search"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -25,16 +37,37 @@
     self.navigationItem.rightBarButtonItem = rightBtn;
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIFont systemFontOfSize:20], NSFontAttributeName, nil, nil]];
     
+    //创建单例类
+    SpecialRequset *request = [SpecialRequset sharedSpecialRequest];
+    //使用单例类请求数据
+    [request getDataWithUrlStr:kRequestURL success:^(NSMutableArray *array) {
+        [self.arr addObjectsFromArray:array];
+        [self.tableView reloadData];
+    }];
     
-    
-    
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self addView];
+
 }
+
+- (void)addView
+{
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100)];
+    self.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width*3, 100);
+    self.scrollView.bounces = NO;
+    self.tableView.tableHeaderView = self.scrollView;
+    
+    self.label = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, 100, 30)];
+    //self.label.backgroundColor = [UIColor blackColor];
+    self.label.text = @"专题合集";
+    [self.tableView.tableHeaderView addSubview:self.label];
+    
+    self.button1 = [UIButton buttonWithType:UIButtonTypeSystem];
+    self.button1.frame = CGRectMake(10, 40, 100, 50);
+    self.button1.backgroundColor = [UIColor yellowColor];
+    [self.scrollView addSubview:self.button1];
+    
+}
+
 
 - (void)searchAction
 {
@@ -51,24 +84,34 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
 
+    return 3;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 10;
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return 1;
 }
 
-/*
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 200;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *cell_id = @"cell_id";
+    ClassifyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cell_id];
+    if (!cell) {
+        cell = [[ClassifyTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cell_id];
+    }
+    SpecialModel *model = self.arr[indexPath.row];
     
-    // Configure the cell...
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
