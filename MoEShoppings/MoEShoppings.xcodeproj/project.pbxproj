@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B171DA91C9A60E900409AA8 /* aaaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B171DA61C9A60E900409AA8 /* aaaa.png */; settings = {ASSET_TAGS = (); }; };
+		5B171DAA1C9A60E900409AA8 /* MoeShowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B171DA81C9A60E900409AA8 /* MoeShowTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		5B171DAE1C9A60F400409AA8 /* TopScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B171DAD1C9A60F400409AA8 /* TopScrollTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		5BFC04FC1C9690EF007B0CFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC04FB1C9690EF007B0CFE /* main.m */; };
 		5BFC04FF1C9690EF007B0CFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC04FE1C9690EF007B0CFE /* AppDelegate.m */; };
 		5BFC05051C9690EF007B0CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFC05031C9690EF007B0CFE /* Main.storyboard */; };
@@ -34,6 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B171DA61C9A60E900409AA8 /* aaaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aaaa.png; sourceTree = "<group>"; };
+		5B171DA71C9A60E900409AA8 /* MoeShowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoeShowTableViewCell.h; sourceTree = "<group>"; };
+		5B171DA81C9A60E900409AA8 /* MoeShowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoeShowTableViewCell.m; sourceTree = "<group>"; };
+		5B171DAC1C9A60F400409AA8 /* TopScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopScrollTableViewCell.h; sourceTree = "<group>"; };
+		5B171DAD1C9A60F400409AA8 /* TopScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopScrollTableViewCell.m; sourceTree = "<group>"; };
 		5BFC04F71C9690EF007B0CFE /* MoEShoppings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoEShoppings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFC04FB1C9690EF007B0CFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BFC04FD1C9690EF007B0CFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +104,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B171DA51C9A60E900409AA8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5B171DA61C9A60E900409AA8 /* aaaa.png */,
+				5B171DA71C9A60E900409AA8 /* MoeShowTableViewCell.h */,
+				5B171DA81C9A60E900409AA8 /* MoeShowTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5B171DAB1C9A60F400409AA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B171DAC1C9A60F400409AA8 /* TopScrollTableViewCell.h */,
+				5B171DAD1C9A60F400409AA8 /* TopScrollTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B171DAF1C9A60FA00409AA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5BFC04EE1C9690EF007B0CFE = {
 			isa = PBXGroup;
 			children = (
@@ -215,8 +249,9 @@
 			isa = PBXGroup;
 			children = (
 				5BFC05201C969480007B0CFE /* Controller */,
-				5BFC05211C969480007B0CFE /* Model */,
-				5BFC05221C969480007B0CFE /* View */,
+				5B171DAF1C9A60FA00409AA8 /* Model */,
+				5B171DAB1C9A60F400409AA8 /* View */,
+				5B171DA51C9A60E900409AA8 /* Cell */,
 			);
 			path = MoEShoppings;
 			sourceTree = "<group>";
@@ -228,20 +263,6 @@
 				5BFC05291C969572007B0CFE /* MoEShoppingsTableViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		5BFC05211C969480007B0CFE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		5BFC05221C969480007B0CFE /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		5BFC05231C969480007B0CFE /* My */ = {
@@ -403,6 +424,7 @@
 				5BFC050A1C9690EF007B0CFE /* LaunchScreen.storyboard in Resources */,
 				5BFC05071C9690EF007B0CFE /* Assets.xcassets in Resources */,
 				5BFC05051C9690EF007B0CFE /* Main.storyboard in Resources */,
+				5B171DA91C9A60E900409AA8 /* aaaa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +443,7 @@
 				C21A80DE1C98FEDD00512E8D /* MySpeTableViewController.m in Sources */,
 				C21A80DB1C98FEBD00512E8D /* MyComTableViewController.m in Sources */,
 				5BFC052D1C9695A0007B0CFE /* HotCollectionViewController.m in Sources */,
+				5B171DAE1C9A60F400409AA8 /* TopScrollTableViewCell.m in Sources */,
 				C2A2FC6D1C9A5A790061A856 /* AFHTTPSessionManager.m in Sources */,
 				C21A80D51C98EF8E00512E8D /* HeaderTableViewCell.m in Sources */,
 				5BFC052A1C969572007B0CFE /* MoEShoppingsTableViewController.m in Sources */,
@@ -431,6 +454,7 @@
 				C2A2FC711C9A5A790061A856 /* AFURLResponseSerialization.m in Sources */,
 				5BFC04FC1C9690EF007B0CFE /* main.m in Sources */,
 				C2A2FC561C9A59840061A856 /* SpecialRequset.m in Sources */,
+				5B171DAA1C9A60E900409AA8 /* MoeShowTableViewCell.m in Sources */,
 				C2A2FC5E1C9A5A200061A856 /* ClassifyTableViewCell.m in Sources */,
 				5BFC05331C9695FB007B0CFE /* MyViewController.m in Sources */,
 				C21A80D81C98F86900512E8D /* SegmentTableViewCell.m in Sources */,
