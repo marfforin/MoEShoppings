@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FC400BB3C4D74FEB8A156717790891C8C5BD5EC4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "03c4235c-651b-4688-be3c-e72d21d07c11++8917" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "03c4235c-651b-4688-be3c-e72d21d07c11++8917" : 0,
+    "FC400BB3C4D74FEB8A156717790891C8C5BD5EC4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BADF7D9C-1D68-464B-9A79-6E79C60D97A9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "03c4235c-651b-4688-be3c-e72d21d07c11++8917" : "TEAM%20PROGRAM\/MoEShoppings\/MoEShoppings\/Lib\/XLScrollViewer\/",
+    "FC400BB3C4D74FEB8A156717790891C8C5BD5EC4" : "TEAM%20PROGRAM\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MoEShoppings",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MoEShoppings\/MoEShoppings.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/www.svnchina.com\/svn\/my39health",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03c4235c-651b-4688-be3c-e72d21d07c11++8917"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/marfforin\/MoEShoppings.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FC400BB3C4D74FEB8A156717790891C8C5BD5EC4"
+    }
+  ]
+}

@@ -22,6 +22,9 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (instancetype)init
 {   //1.创建对象
+    
+//    self.view.backgroundColor = [UIColor clearColor];
+    
     //1.1先创建UICollectionViewFlowLayout对象
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     //1.2配置UICollectionViewFlowLayout对象的相关属性

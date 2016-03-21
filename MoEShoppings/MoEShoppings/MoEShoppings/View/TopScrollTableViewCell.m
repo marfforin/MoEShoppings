@@ -31,7 +31,7 @@
 
 - (void)allViews
 {
-    UIView *backGroumdView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 160)];
+    UIView *backGroumdView = [[UIView alloc] initWithFrame:CGRectMake(0, 30, [[UIScreen mainScreen] bounds].size.width, 160)];
     backGroumdView.backgroundColor = [UIColor colorWithRed:0.7256 green:0.7221 blue:0.7292 alpha:1.0];
     [self.contentView addSubview:backGroumdView];
     
@@ -41,7 +41,7 @@
     [backGroumdView addSubview:scrollView];
     
     UIView *buttonView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMinX(scrollView.frame), CGRectGetMaxY(scrollView.frame), scrollView.frame.size.width, 85)];
-    buttonView.backgroundColor = [UIColor cyanColor];
+//    buttonView.backgroundColor = [UIColor cyanColor];
     [backGroumdView addSubview:buttonView];
     
     

@@ -12,6 +12,10 @@
 
 @interface MoEShoppingsTableViewController ()
 
+@property (nonatomic, strong) UISegmentedControl *segControl;
+@property (nonatomic, strong) UIScrollView *topScrollView;
+
+
 @end
 
 @implementation MoEShoppingsTableViewController
@@ -40,12 +44,11 @@
 - (void)addSegmentedControl
 {
     
-    UIScrollView *scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 30)];
+    self.topScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 30)];
     //scrollView.backgroundColor = [UIColor orangeColor];
-    scrollView.contentSize = CGSizeMake([[UIScreen mainScreen] bounds].size.width * 2, 30);
-    scrollView.showsHorizontalScrollIndicator = NO;
-    //scrollView.pagingEnabled = YES;
-    self.tableView.tableHeaderView = scrollView;
+    self.topScrollView.contentSize = CGSizeMake([[UIScreen mainScreen] bounds].size.width * 2, 30);
+    self.topScrollView.showsHorizontalScrollIndicator = NO;
+    [self.tableView addSubview:self.topScrollView];
 //    self.tableView.tableHeaderView.frame.size.height = 
 //    [self.view addSubview:scrollView];
     
@@ -53,8 +56,8 @@
     UISegmentedControl *segControl = [[UISegmentedControl alloc] initWithItems:itemArray];
     segControl.frame =  CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width * 2, 30);
     segControl.backgroundColor = [UIColor cyanColor];
-    [scrollView addSubview:segControl];
     
+    [self.topScrollView addSubview:segControl];
     
     
     

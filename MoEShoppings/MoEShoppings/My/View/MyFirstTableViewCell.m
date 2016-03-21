@@ -43,6 +43,7 @@
         [self.imageFuzzy addSubview:button3];
         
     }
+    self.imageFuzzy.userInteractionEnabled = YES;
     return self;
 }
 

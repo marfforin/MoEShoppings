@@ -12,6 +12,7 @@
 
 #import "MainTabBarController.h"
 #import "MoEShoppingsTableViewController.h"
+#import "MoEShoppingsViewController.h"
 #import "HotCollectionViewController.h"
 #import "ClassifyTableViewController.h"
 #import "MyViewController.h"
@@ -25,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MoEShoppingsTableViewController *MoEVC = [[MoEShoppingsTableViewController alloc] init];
+    MoEShoppingsViewController *MoEVC = [[MoEShoppingsViewController alloc] init];
     UINavigationController *MoENC = [[UINavigationController alloc] initWithRootViewController:MoEVC];
     [self createControllerWithController:MoEVC withNavigationBarBackgroudImage:@"bg_datepicker.9" withNavitionTitle:@"卖萌货" withTabTltle:@"卖萌货" withTabImage:@"ic_tab_home_normal" withTabSelectImage:@"ic_tab_home_selected"];
     
@@ -92,6 +93,8 @@
     MyVC.tabBarItem.image = image4;
     MyVC.tabBarItem.selectedImage = seImage4;
     */
+    
+//    self.tabBar.selectedItem = ;
     
     self.viewControllers = @[MoENC, HotNC, ClassifyNC, MyVC];
     

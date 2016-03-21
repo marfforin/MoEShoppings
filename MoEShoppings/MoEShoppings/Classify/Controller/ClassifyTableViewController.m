@@ -46,6 +46,8 @@
     }];
     
     [self addView];
+    
+    self.tableView.userInteractionEnabled = YES;
 
 }
 
@@ -106,7 +108,7 @@
     if (!cell) {
         cell = [[ClassifyTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cell_id];
     }
-    SpecialModel *model = self.arr[indexPath.row];
+//    SpecialModel *model = self.arr[indexPath.row];
     
     
     return cell;

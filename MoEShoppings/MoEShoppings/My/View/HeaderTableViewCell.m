@@ -35,6 +35,7 @@
         [self addSubview:self.button];
 
     }
+    self.userInteractionEnabled = YES;
     return self;
 }
 
