@@ -62,7 +62,8 @@ static NSString * const reuseIdentifier = @"Cell";
     [[DataHandle sharedDataHandle] aychronDataWithReloadDataBlock:^{
         [self.collectionView reloadData];
     }];
-    self.collectionView.backgroundColor = [UIColor colorWithRed:192 green:192 blue:192 alpha:1];
+//    self.collectionView.backgroundColor = [UIColor colorWithRed:192 green:192 blue:192 alpha:1];
+    
     self.collectionView.backgroundColor = [UIColor grayColor];
     //注册重用标志
     [self.collectionView registerClass:[HotCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];

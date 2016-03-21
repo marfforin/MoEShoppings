@@ -31,7 +31,7 @@
     
     self =[super initWithFrame:frame];
     if (self) {
-        self.xl_views =views; // 展示的view
+        self.xl_views = views; // 展示的view
         self.xl_buttonNames =names; // 头标题
 //        NSString *temp =[NSString stringWithFormat:@"%d",choose];
 //        NSArray *arr =@[@"111",@"112",@"121",@"211",@"122",@"212",@"221",@"222"];
