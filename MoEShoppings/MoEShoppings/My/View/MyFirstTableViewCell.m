@@ -27,18 +27,14 @@
         self.button1.frame = CGRectMake(20, 30, 20, 20);
         [self.button1 setBackgroundImage:[UIImage imageNamed:@"me_giftmessage"] forState:UIControlStateNormal];
         
-        
-        
         self.button2 = [UIButton buttonWithType:UIButtonTypeSystem];
         self.button2.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 40, 30, 20, 20);
         [self.button2 setBackgroundImage:[UIImage imageNamed:@"me_settings"] forState:UIControlStateNormal];
-        
         
         self.button3 = [UIButton buttonWithType:UIButtonTypeCustom];
         self.button3.frame = CGRectMake(CGRectGetMinX(imageLanding.frame), CGRectGetMaxY(imageLanding.frame)+10, imageLanding.frame.size.width, 20);
         [self.button3 setTitle:@"登录" forState:UIControlStateNormal];
         self.button3.titleLabel.font = [UIFont fontWithName:@"Arial-Bold" size:12];
-        
         [self.imageFuzzy addSubview:self.button1];
         [self.imageFuzzy addSubview:self.button2];
         [self.imageFuzzy addSubview:self.button3];

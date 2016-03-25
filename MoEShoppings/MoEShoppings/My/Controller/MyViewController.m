@@ -26,13 +26,13 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-   
+    
     
     //开启交互
     self.firstCell.imageFuzzy.userInteractionEnabled = YES;
     
-self.temp = [NSIndexPath indexPathForRow:0 inSection:0];
-
+    self.temp = [NSIndexPath indexPathForRow:0 inSection:0];
+    
     self.navigationController.navigationBar.hidden = YES;
 }
 
@@ -82,21 +82,21 @@ self.temp = [NSIndexPath indexPathForRow:0 inSection:0];
     MyFirstTableViewCell *first = [(UITableView *)scrollView cellForRowAtIndexPath:self.temp];
     HeaderTableViewCell *two = [(UITableView *)scrollView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.temp.row inSection:1]];
     SegmentTableViewCell *seg = [(UITableView *)scrollView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.temp.row inSection:2]];
-//    first.imageFuzzy.transform = CGAffineTransformMakeScale(1,  1 + scrollView.contentOffset.y / [UIScreen mainScreen].bounds.size.height / 3 );
+    //    first.imageFuzzy.transform = CGAffineTransformMakeScale(1,  1 + scrollView.contentOffset.y / [UIScreen mainScreen].bounds.size.height / 3 );
     
-
+    
     //通过滑动的便宜距离重新给图片设置大小
     
     self.cgf = scrollView.contentOffset.y;
     if(self.cgf<150)
     {
         CGRect f= first.imageFuzzy.frame;
-//        f.origin.y= yOffset;
+        //        f.origin.y= yOffset;
         f.size.height = -self.cgf+[UIScreen mainScreen].bounds.size.height/3;
         first.imageFuzzy.frame = f;
         
         CGRect f1= [self.tableView cellForRowAtIndexPath:self.temp].frame;
-//        f1.origin.y= yOffset;
+        //        f1.origin.y= yOffset;
         f1.size.height = -self.cgf+[UIScreen mainScreen].bounds.size.height/3;
         first.frame = f1;
         
@@ -105,18 +105,18 @@ self.temp = [NSIndexPath indexPathForRow:0 inSection:0];
         f2.origin.y= -self.cgf+[UIScreen mainScreen].bounds.size.height/3;
         f2.size.height =40;
         two.frame = f2;
-
+        
         
         CGRect f3= [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:self.temp.row inSection:2]].frame;
         f3.origin.y= -self.cgf+[UIScreen mainScreen].bounds.size.height/3+40;
         f3.size.height = 400;
         seg.frame = f3;
-
+        
         
         
     }
-
-
+    
+    
 }
 
 
@@ -151,7 +151,7 @@ self.temp = [NSIndexPath indexPathForRow:0 inSection:0];
 
 - (void)button1Action
 {
-    NSLog(@"button1");
+//    NSLog(@"button1");
     MyLoginViewController *login = [[MyLoginViewController alloc] init];
     [self presentViewController:login animated:YES completion:nil];
     
@@ -159,20 +159,21 @@ self.temp = [NSIndexPath indexPathForRow:0 inSection:0];
 
 - (void)button2Action
 {
+    NSLog(@"123456");
     MySetTableViewController *set = [[MySetTableViewController alloc] init];
     [self.navigationController pushViewController:set animated:YES];
 }
 
 - (void)button3Action
 {
-    NSLog(@"button3");
+//    NSLog(@"button3");
     MyLoginViewController *login = [[MyLoginViewController alloc] init];
     [self presentViewController:login animated:YES completion:nil];
     
 }
 - (void)button4Action
 {
-    NSLog(@"button4");
+//    NSLog(@"button4");
     MyLoginViewController *login = [[MyLoginViewController alloc] init];
     [self presentViewController:login animated:YES completion:nil];
 }

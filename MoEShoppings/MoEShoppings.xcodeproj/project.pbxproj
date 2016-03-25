@@ -52,14 +52,16 @@
 		5BFC05301C9695ED007B0CFE /* ClassifyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC052F1C9695ED007B0CFE /* ClassifyTableViewController.m */; };
 		5BFC05331C9695FB007B0CFE /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC05321C9695FB007B0CFE /* MyViewController.m */; };
 		5BFC05361C96981C007B0CFE /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC05351C96981C007B0CFE /* MainTabBarController.m */; };
-		C20C437E1CA22C8000CE4901 /* MySetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20C437D1CA22C8000CE4901 /* MySetTableViewController.m */; };
 		C21A80D51C98EF8E00512E8D /* HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80D41C98EF8E00512E8D /* HeaderTableViewCell.m */; };
 		C21A80D81C98F86900512E8D /* SegmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80D71C98F86900512E8D /* SegmentTableViewCell.m */; };
 		C21A80DB1C98FEBD00512E8D /* MyComTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80DA1C98FEBD00512E8D /* MyComTableViewController.m */; };
 		C21A80DE1C98FEDD00512E8D /* MySpeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80DD1C98FEDD00512E8D /* MySpeTableViewController.m */; };
 		C21A80E41C992EE600512E8D /* MyFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C21A80E31C992EE600512E8D /* MyFirstTableViewCell.m */; };
-		C233DACB1CA3C340000BC6C9 /* MySignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C233DAC91CA3C340000BC6C9 /* MySignViewController.m */; };
-		C233DACC1CA3C340000BC6C9 /* MySignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C233DACA1CA3C340000BC6C9 /* MySignViewController.xib */; };
+		C258828C1CA4E8C6004D9CB9 /* MyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25882851CA4E8C6004D9CB9 /* MyLoginViewController.m */; };
+		C258828D1CA4E8C6004D9CB9 /* MyLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25882861CA4E8C6004D9CB9 /* MyLoginViewController.xib */; };
+		C258828E1CA4E8C6004D9CB9 /* MySignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25882881CA4E8C6004D9CB9 /* MySignViewController.m */; };
+		C258828F1CA4E8C6004D9CB9 /* MySignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C25882891CA4E8C6004D9CB9 /* MySignViewController.xib */; };
+		C25882901CA4E8C6004D9CB9 /* MySetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C258828B1CA4E8C6004D9CB9 /* MySetTableViewController.m */; };
 		C2A2FC561C9A59840061A856 /* SpecialRequset.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A2FC541C9A59840061A856 /* SpecialRequset.m */; };
 		C2A2FC5A1C9A5A140061A856 /* SpecialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A2FC591C9A5A140061A856 /* SpecialModel.m */; };
 		C2A2FC5E1C9A5A200061A856 /* ClassifyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A2FC5D1C9A5A200061A856 /* ClassifyTableViewCell.m */; };
@@ -69,8 +71,6 @@
 		C2A2FC701C9A5A790061A856 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A2FC681C9A5A790061A856 /* AFURLRequestSerialization.m */; };
 		C2A2FC711C9A5A790061A856 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A2FC6A1C9A5A790061A856 /* AFURLResponseSerialization.m */; };
 		C2A2FC721C9A5A790061A856 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A2FC6C1C9A5A790061A856 /* AFURLSessionManager.m */; };
-		C2ECF8141CA12A7500C348C2 /* MyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2ECF8121CA12A7500C348C2 /* MyLoginViewController.m */; };
-		C2ECF8151CA12A7500C348C2 /* MyLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2ECF8131CA12A7500C348C2 /* MyLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,8 +163,6 @@
 		5BFC05321C9695FB007B0CFE /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		5BFC05341C96981C007B0CFE /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		5BFC05351C96981C007B0CFE /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
-		C20C437C1CA22C8000CE4901 /* MySetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySetTableViewController.h; sourceTree = "<group>"; };
-		C20C437D1CA22C8000CE4901 /* MySetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySetTableViewController.m; sourceTree = "<group>"; };
 		C21A80D31C98EF8E00512E8D /* HeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderTableViewCell.h; sourceTree = "<group>"; };
 		C21A80D41C98EF8E00512E8D /* HeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderTableViewCell.m; sourceTree = "<group>"; };
 		C21A80D61C98F86900512E8D /* SegmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentTableViewCell.h; sourceTree = "<group>"; };
@@ -175,9 +173,14 @@
 		C21A80DD1C98FEDD00512E8D /* MySpeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySpeTableViewController.m; sourceTree = "<group>"; };
 		C21A80E21C992EE600512E8D /* MyFirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFirstTableViewCell.h; sourceTree = "<group>"; };
 		C21A80E31C992EE600512E8D /* MyFirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFirstTableViewCell.m; sourceTree = "<group>"; };
-		C233DAC81CA3C340000BC6C9 /* MySignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySignViewController.h; sourceTree = "<group>"; };
-		C233DAC91CA3C340000BC6C9 /* MySignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySignViewController.m; sourceTree = "<group>"; };
-		C233DACA1CA3C340000BC6C9 /* MySignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySignViewController.xib; sourceTree = "<group>"; };
+		C25882841CA4E8C6004D9CB9 /* MyLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoginViewController.h; sourceTree = "<group>"; };
+		C25882851CA4E8C6004D9CB9 /* MyLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoginViewController.m; sourceTree = "<group>"; };
+		C25882861CA4E8C6004D9CB9 /* MyLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLoginViewController.xib; sourceTree = "<group>"; };
+		C25882871CA4E8C6004D9CB9 /* MySignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySignViewController.h; sourceTree = "<group>"; };
+		C25882881CA4E8C6004D9CB9 /* MySignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySignViewController.m; sourceTree = "<group>"; };
+		C25882891CA4E8C6004D9CB9 /* MySignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySignViewController.xib; sourceTree = "<group>"; };
+		C258828A1CA4E8C6004D9CB9 /* MySetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySetTableViewController.h; sourceTree = "<group>"; };
+		C258828B1CA4E8C6004D9CB9 /* MySetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySetTableViewController.m; sourceTree = "<group>"; };
 		C2A2FC521C9A59840061A856 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C2A2FC531C9A59840061A856 /* SpecialRequset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialRequset.h; sourceTree = "<group>"; };
 		C2A2FC541C9A59840061A856 /* SpecialRequset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialRequset.m; sourceTree = "<group>"; };
@@ -199,9 +202,6 @@
 		C2A2FC6A1C9A5A790061A856 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		C2A2FC6B1C9A5A790061A856 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		C2A2FC6C1C9A5A790061A856 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		C2ECF8111CA12A7500C348C2 /* MyLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLoginViewController.h; sourceTree = "<group>"; };
-		C2ECF8121CA12A7500C348C2 /* MyLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoginViewController.m; sourceTree = "<group>"; };
-		C2ECF8131CA12A7500C348C2 /* MyLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,14 +480,14 @@
 			children = (
 				5BFC05311C9695FB007B0CFE /* MyViewController.h */,
 				5BFC05321C9695FB007B0CFE /* MyViewController.m */,
-				C2ECF8111CA12A7500C348C2 /* MyLoginViewController.h */,
-				C2ECF8121CA12A7500C348C2 /* MyLoginViewController.m */,
-				C2ECF8131CA12A7500C348C2 /* MyLoginViewController.xib */,
-				C233DAC81CA3C340000BC6C9 /* MySignViewController.h */,
-				C233DAC91CA3C340000BC6C9 /* MySignViewController.m */,
-				C233DACA1CA3C340000BC6C9 /* MySignViewController.xib */,
-				C20C437C1CA22C8000CE4901 /* MySetTableViewController.h */,
-				C20C437D1CA22C8000CE4901 /* MySetTableViewController.m */,
+				C25882841CA4E8C6004D9CB9 /* MyLoginViewController.h */,
+				C25882851CA4E8C6004D9CB9 /* MyLoginViewController.m */,
+				C25882861CA4E8C6004D9CB9 /* MyLoginViewController.xib */,
+				C25882871CA4E8C6004D9CB9 /* MySignViewController.h */,
+				C25882881CA4E8C6004D9CB9 /* MySignViewController.m */,
+				C25882891CA4E8C6004D9CB9 /* MySignViewController.xib */,
+				C258828A1CA4E8C6004D9CB9 /* MySetTableViewController.h */,
+				C258828B1CA4E8C6004D9CB9 /* MySetTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -632,8 +632,8 @@
 			files = (
 				5BFC050A1C9690EF007B0CFE /* LaunchScreen.storyboard in Resources */,
 				5BFC05071C9690EF007B0CFE /* Assets.xcassets in Resources */,
-				C2ECF8151CA12A7500C348C2 /* MyLoginViewController.xib in Resources */,
-				C233DACC1CA3C340000BC6C9 /* MySignViewController.xib in Resources */,
+				C258828D1CA4E8C6004D9CB9 /* MyLoginViewController.xib in Resources */,
+				C258828F1CA4E8C6004D9CB9 /* MySignViewController.xib in Resources */,
 				5BFC05051C9690EF007B0CFE /* Main.storyboard in Resources */,
 				5B171DA91C9A60E900409AA8 /* aaaa.png in Resources */,
 			);
@@ -647,7 +647,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF86C791C9F815900F10A69 /* UIImageView+HighlightedWebCache.m in Sources */,
-				C233DACB1CA3C340000BC6C9 /* MySignViewController.m in Sources */,
 				5BFC04FF1C9690EF007B0CFE /* AppDelegate.m in Sources */,
 				5BFC05361C96981C007B0CFE /* MainTabBarController.m in Sources */,
 				C21A80E41C992EE600512E8D /* MyFirstTableViewCell.m in Sources */,
@@ -657,6 +656,7 @@
 				5BFC05301C9695ED007B0CFE /* ClassifyTableViewController.m in Sources */,
 				5BF86C731C9F815900F10A69 /* SDWebImageDownloaderOperation.m in Sources */,
 				C21A80DE1C98FEDD00512E8D /* MySpeTableViewController.m in Sources */,
+				C258828E1CA4E8C6004D9CB9 /* MySignViewController.m in Sources */,
 				C21A80DB1C98FEBD00512E8D /* MyComTableViewController.m in Sources */,
 				5BBD78021C9B9D4B00FED034 /* DigitalViewController.m in Sources */,
 				5BBD77FC1C9B9C1200FED034 /* MOEThingsViewController.m in Sources */,
@@ -664,6 +664,7 @@
 				5BF86C7A1C9F815900F10A69 /* UIImageView+WebCache.m in Sources */,
 				5BBD78051C9B9D6E00FED034 /* AnimationViewController.m in Sources */,
 				5BF9839A1C9C057B00E118C4 /* ScrollButtonTableViewCell.m in Sources */,
+				C25882901CA4E8C6004D9CB9 /* MySetTableViewController.m in Sources */,
 				5BF86C431C9F810600F10A69 /* HotCollectionViewCell.m in Sources */,
 				5BFC052D1C9695A0007B0CFE /* HotCollectionViewController.m in Sources */,
 				5BBD78121C9BD68B00FED034 /* SelectionViewController.m in Sources */,
@@ -674,13 +675,12 @@
 				5BF86C701C9F815900F10A69 /* SDWebImageCompat.m in Sources */,
 				5BF86C781C9F815900F10A69 /* UIImage+MultiFormat.m in Sources */,
 				C21A80D51C98EF8E00512E8D /* HeaderTableViewCell.m in Sources */,
-				C20C437E1CA22C8000CE4901 /* MySetTableViewController.m in Sources */,
 				5BFC052A1C969572007B0CFE /* MoEShoppingsTableViewController.m in Sources */,
 				5BF86C741C9F815900F10A69 /* SDWebImageManager.m in Sources */,
 				5BF86C6F1C9F815900F10A69 /* SDImageCache.m in Sources */,
 				5BBD780F1C9BD17100FED034 /* XLScrollViewer.m in Sources */,
 				5BF86C751C9F815900F10A69 /* SDWebImagePrefetcher.m in Sources */,
-				C2ECF8141CA12A7500C348C2 /* MyLoginViewController.m in Sources */,
+				C258828C1CA4E8C6004D9CB9 /* MyLoginViewController.m in Sources */,
 				5BBD780B1C9B9DB900FED034 /* SportViewController.m in Sources */,
 				C2A2FC6F1C9A5A790061A856 /* AFSecurityPolicy.m in Sources */,
 				5BBD77FF1C9B9D0300FED034 /* DelicousFoodViewController.m in Sources */,
