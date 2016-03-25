@@ -23,44 +23,31 @@
         imageLanding.center = point;
         [self.imageFuzzy addSubview:imageLanding];
         //buttuon
-        UIButton *button1 = [UIButton buttonWithType:UIButtonTypeSystem];
-        button1.frame = CGRectMake(20, 30, 20, 20);
-        [button1 setBackgroundImage:[UIImage imageNamed:@"me_giftmessage"] forState:UIControlStateNormal];
-        [button1 addTarget:self action:@selector(button1Action) forControlEvents:UIControlEventTouchUpInside];
+        self.button1 = [UIButton buttonWithType:UIButtonTypeSystem];
+        self.button1.frame = CGRectMake(20, 30, 20, 20);
+        [self.button1 setBackgroundImage:[UIImage imageNamed:@"me_giftmessage"] forState:UIControlStateNormal];
         
-        UIButton *button2 = [UIButton buttonWithType:UIButtonTypeSystem];
-        button2.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 40, 30, 20, 20);
-        [button2 setBackgroundImage:[UIImage imageNamed:@"me_settings"] forState:UIControlStateNormal];
-        [button2 addTarget:self action:@selector(button2Action) forControlEvents:UIControlEventTouchUpInside];
         
-        UIButton *button3 = [UIButton buttonWithType:UIButtonTypeCustom];
-        button3.frame = CGRectMake(CGRectGetMinX(imageLanding.frame), CGRectGetMaxY(imageLanding.frame)+10, imageLanding.frame.size.width, 20);
-        [button3 setTitle:@"登录" forState:UIControlStateNormal];
-        button3.titleLabel.font = [UIFont fontWithName:@"Arial-Bold" size:12];
-        [button3 addTarget:self action:@selector(button3Action) forControlEvents:UIControlEventTouchUpInside];
-        [self.imageFuzzy addSubview:button1];
-        [self.imageFuzzy addSubview:button2];
-        [self.imageFuzzy addSubview:button3];
         
+        self.button2 = [UIButton buttonWithType:UIButtonTypeSystem];
+        self.button2.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 40, 30, 20, 20);
+        [self.button2 setBackgroundImage:[UIImage imageNamed:@"me_settings"] forState:UIControlStateNormal];
+        
+        
+        self.button3 = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.button3.frame = CGRectMake(CGRectGetMinX(imageLanding.frame), CGRectGetMaxY(imageLanding.frame)+10, imageLanding.frame.size.width, 20);
+        [self.button3 setTitle:@"登录" forState:UIControlStateNormal];
+        self.button3.titleLabel.font = [UIFont fontWithName:@"Arial-Bold" size:12];
+        
+        [self.imageFuzzy addSubview:self.button1];
+        [self.imageFuzzy addSubview:self.button2];
+        [self.imageFuzzy addSubview:self.button3];
+
     }
     self.imageFuzzy.userInteractionEnabled = YES;
     return self;
 }
 
-- (void)button1Action
-{
-    NSLog(@"button1");
-}
-
-- (void)button2Action
-{
-    NSLog(@"button2");
-}
-
-- (void)button3Action
-{
-    NSLog(@"button3");
-}
 
 
 - (void)awakeFromNib {

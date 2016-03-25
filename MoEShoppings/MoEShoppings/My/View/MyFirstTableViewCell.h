@@ -10,4 +10,8 @@
 
 @interface MyFirstTableViewCell : UITableViewCell
 @property (nonatomic, strong)UIImageView *imageFuzzy;
+@property (nonatomic, strong)UIButton *button1;
+@property (nonatomic, strong)UIButton *button2;
+@property (nonatomic, strong)UIButton *button3;
+
 @end

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyLoginViewController">
+            <connections>
+                <outlet property="passwordTextField" destination="YUJ-ea-qZM" id="zZY-lD-kSe"/>
+                <outlet property="phoneTextField" destination="86T-wc-r3t" id="zpi-bJ-jk1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JRB-CK-CfD">
+                    <rect key="frame" x="0.0" y="0.0" width="592" height="600"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86T-wc-r3t">
+                            <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUJ-ea-qZM">
+                            <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfd-0N-CC4">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <color key="backgroundColor" red="1" green="0.42960082690000001" blue="0.53739574410000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="登录">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="74" y="195" width="264" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="landing:" destination="-1" eventType="touchUpInside" id="wSP-a7-MsC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vh0-v1-W9j">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="手机验证码登陆">
+                                <color key="titleColor" red="0.34081179099999998" green="0.34081179099999998" blue="0.34081179099999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <variation key="widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="254" width="105" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="phoneButton:" destination="-1" eventType="touchUpInside" id="7eZ-sj-MkN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELO-4d-IG0">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="忘记密码">
+                                <color key="titleColor" red="0.34081179099999998" green="0.34081179099999998" blue="0.34081179099999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <variation key="widthClass=compact" fixedFrame="YES">
+                                <rect key="frame" x="325" y="254" width="61" height="30"/>
+                            </variation>
+                            <connections>
+                                <action selector="psaawordButton:" destination="-1" eventType="touchUpInside" id="RiW-dm-YY2"/>
+                            </connections>
+                        </button>
+                        <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ft4-le-eoM">
+                            <rect key="frame" x="0.0" y="19" width="600" height="44"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="laF-qe-NdW"/>
+                            </constraints>
+                            <color key="barTintColor" red="0.89680137429999995" green="0.092704927990000005" blue="0.27394720039999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <items>
+                                <navigationItem title="登陆" id="Rja-U2-ZZC">
+                                    <barButtonItem key="leftBarButtonItem" title="取消" id="LbW-cs-wrH">
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="-1" id="0Z8-fr-he4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" title="注册" id="rFo-gV-BXM">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="login:" destination="-1" id="V2i-Xo-qlK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="laF-qe-NdW"/>
+                                </mask>
+                            </variation>
+                            <variation key="widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="laF-qe-NdW"/>
+                                </mask>
+                            </variation>
+                        </navigationBar>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.87834042321116923" green="0.87834042321116923" blue="0.87834042321116923" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="86T-wc-r3t" firstAttribute="leading" secondItem="JRB-CK-CfD" secondAttribute="leading" id="IRj-5C-hX1"/>
+                        <constraint firstItem="86T-wc-r3t" firstAttribute="top" secondItem="ft4-le-eoM" secondAttribute="bottom" constant="46" id="Q6K-ef-Ttr"/>
+                        <constraint firstAttribute="trailing" secondItem="ft4-le-eoM" secondAttribute="trailing" id="Wot-Fo-1HS"/>
+                        <constraint firstAttribute="trailing" secondItem="YUJ-ea-qZM" secondAttribute="trailing" id="b89-ha-w3l"/>
+                        <constraint firstItem="ft4-le-eoM" firstAttribute="top" secondItem="JRB-CK-CfD" secondAttribute="top" constant="22" id="d3g-Ok-Dbu"/>
+                        <constraint firstItem="ft4-le-eoM" firstAttribute="leading" secondItem="JRB-CK-CfD" secondAttribute="leading" id="dCC-Ln-uXZ"/>
+                        <constraint firstAttribute="trailing" secondItem="86T-wc-r3t" secondAttribute="trailing" id="jSh-K4-LXr"/>
+                        <constraint firstItem="YUJ-ea-qZM" firstAttribute="leading" secondItem="JRB-CK-CfD" secondAttribute="leading" id="oaa-6w-5HI"/>
+                        <constraint firstItem="YUJ-ea-qZM" firstAttribute="top" secondItem="86T-wc-r3t" secondAttribute="bottom" id="w95-h6-DGB"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="subviews">
+                            <exclude reference="86T-wc-r3t"/>
+                            <exclude reference="YUJ-ea-qZM"/>
+                            <exclude reference="Rfd-0N-CC4"/>
+                            <exclude reference="Vh0-v1-W9j"/>
+                            <exclude reference="ELO-4d-IG0"/>
+                            <exclude reference="ft4-le-eoM"/>
+                        </mask>
+                        <mask key="constraints">
+                            <exclude reference="IRj-5C-hX1"/>
+                            <exclude reference="Q6K-ef-Ttr"/>
+                            <exclude reference="jSh-K4-LXr"/>
+                            <exclude reference="b89-ha-w3l"/>
+                            <exclude reference="oaa-6w-5HI"/>
+                            <exclude reference="w95-h6-DGB"/>
+                            <exclude reference="Wot-Fo-1HS"/>
+                            <exclude reference="d3g-Ok-Dbu"/>
+                            <exclude reference="dCC-Ln-uXZ"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="86T-wc-r3t"/>
+                            <include reference="YUJ-ea-qZM"/>
+                            <include reference="Rfd-0N-CC4"/>
+                            <include reference="Vh0-v1-W9j"/>
+                            <include reference="ELO-4d-IG0"/>
+                            <include reference="ft4-le-eoM"/>
+                        </mask>
+                        <mask key="constraints">
+                            <include reference="IRj-5C-hX1"/>
+                            <include reference="Q6K-ef-Ttr"/>
+                            <include reference="jSh-K4-LXr"/>
+                            <include reference="b89-ha-w3l"/>
+                            <include reference="oaa-6w-5HI"/>
+                            <include reference="w95-h6-DGB"/>
+                            <include reference="Wot-Fo-1HS"/>
+                            <include reference="d3g-Ok-Dbu"/>
+                            <include reference="dCC-Ln-uXZ"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JRB-CK-CfD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RXP-Kf-SIi"/>
+                <constraint firstAttribute="bottom" secondItem="JRB-CK-CfD" secondAttribute="bottom" id="gGI-Y4-8mx"/>
+                <constraint firstItem="JRB-CK-CfD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nig-3t-FSX"/>
+                <constraint firstAttribute="trailing" secondItem="JRB-CK-CfD" secondAttribute="trailing" id="q2l-qg-tVR"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="RXP-Kf-SIi"/>
+                    <exclude reference="gGI-Y4-8mx"/>
+                    <exclude reference="nig-3t-FSX"/>
+                    <exclude reference="q2l-qg-tVR"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="RXP-Kf-SIi"/>
+                    <include reference="gGI-Y4-8mx"/>
+                    <include reference="nig-3t-FSX"/>
+                    <include reference="q2l-qg-tVR"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

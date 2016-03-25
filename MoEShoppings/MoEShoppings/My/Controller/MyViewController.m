@@ -10,6 +10,8 @@
 #import "HeaderTableViewCell.h"
 #import "SegmentTableViewCell.h"
 #import "MyFirstTableViewCell.h"
+#import "MyLoginViewController.h"
+#import "MySetTableViewController.h"
 @interface MyViewController ()<UITableViewDataSource>
 @property (nonatomic, strong)MyFirstTableViewCell *firstCell;
 
@@ -27,12 +29,11 @@
    
     
     //开启交互
-//    self.tableView.userInteractionEnabled = YES;
     self.firstCell.imageFuzzy.userInteractionEnabled = YES;
     
 self.temp = [NSIndexPath indexPathForRow:0 inSection:0];
 
-    
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 // 分区
@@ -53,15 +54,16 @@ self.temp = [NSIndexPath indexPathForRow:0 inSection:0];
         MyFirstTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
         if (!cell) {
             cell = [[MyFirstTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell1"];
-            
-            
-            
+            [cell.button1 addTarget:self action:@selector(button1Action) forControlEvents:UIControlEventTouchUpInside];
+            [cell.button2 addTarget:self action:@selector(button2Action) forControlEvents:UIControlEventTouchUpInside];
+            [cell.button3 addTarget:self action:@selector(button3Action) forControlEvents:UIControlEventTouchUpInside];
         }
         return cell;
     }else if (indexPath.section == 1){
         HeaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell2"];
         if (!cell) {
             cell = [[HeaderTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell2"];
+            [cell.button addTarget:self action:@selector(button4Action) forControlEvents:UIControlEventTouchUpInside];
         }
         return cell;
     }else{
@@ -145,6 +147,34 @@ self.temp = [NSIndexPath indexPathForRow:0 inSection:0];
     }else {
         return 0;
     }
+}
+
+- (void)button1Action
+{
+    NSLog(@"button1");
+    MyLoginViewController *login = [[MyLoginViewController alloc] init];
+    [self presentViewController:login animated:YES completion:nil];
+    
+}
+
+- (void)button2Action
+{
+    MySetTableViewController *set = [[MySetTableViewController alloc] init];
+    [self.navigationController pushViewController:set animated:YES];
+}
+
+- (void)button3Action
+{
+    NSLog(@"button3");
+    MyLoginViewController *login = [[MyLoginViewController alloc] init];
+    [self presentViewController:login animated:YES completion:nil];
+    
+}
+- (void)button4Action
+{
+    NSLog(@"button4");
+    MyLoginViewController *login = [[MyLoginViewController alloc] init];
+    [self presentViewController:login animated:YES completion:nil];
 }
 
 

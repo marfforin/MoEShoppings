@@ -31,7 +31,7 @@
         imageView1.frame = CGRectMake(self.label.frame.size.width-40, 5, 30, 30);
         [self.label addSubview:imageView1];
         
-        [self.button addTarget:self action:@selector(button4Action) forControlEvents:UIControlEventTouchUpInside];
+        
         [self addSubview:self.button];
 
     }
@@ -40,10 +40,6 @@
 }
 
 
-- (void)button4Action
-{
-    NSLog(@"button4");
-}
 
 
 - (void)awakeFromNib {

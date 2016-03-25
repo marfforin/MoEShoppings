@@ -81,7 +81,8 @@
     */
      
     MyViewController *MyVC = [[MyViewController alloc] init];
-    [self createControllerWithController:MyVC withNavigationBarBackgroudImage:nil withNavitionTitle:nil withTabTltle:@"我" withTabImage:@"ic_tab_profile_normal_male" withTabSelectImage:@"ic_tab_profile_selected_male"];
+    UINavigationController *myNC = [[UINavigationController alloc] initWithRootViewController:MyVC];
+    [self createControllerWithController:myNC withNavigationBarBackgroudImage:@"bg_datepicker.9" withNavitionTitle:@"我" withTabTltle:@"我" withTabImage:@"ic_tab_profile_normal_male" withTabSelectImage:@"ic_tab_profile_selected_male"];
     
     /*/
     MyVC.tabBarItem.title = @"我";
@@ -96,7 +97,7 @@
     
 //    self.tabBar.selectedItem = ;
     
-    self.viewControllers = @[MoENC, HotNC, ClassifyNC, MyVC];
+    self.viewControllers = @[MoENC, HotNC, ClassifyNC, myNC];
     
 }
 
